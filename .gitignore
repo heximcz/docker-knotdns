@@ -1,2 +1,4 @@
-./docker-compose.yml
-
+/knot.iml
+/docker-compose.yml
+/.idea/
+.idea/
