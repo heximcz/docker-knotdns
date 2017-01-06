@@ -10,6 +10,8 @@
 ##Additional modules:
 
 - php 7
+- vim
+- ntpdate
 - knot-dnsutils (kdig,..)
 
 ##docker-compose.yml (example)
