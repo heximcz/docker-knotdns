@@ -14,7 +14,7 @@ RUN apt-get -q -y update \
 && echo "deb https://deb.knot-dns.cz/knot/ jessie main" > /etc/apt/sources.list.d/knot.list \
 && apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0x908332071dd2e32e \
 && echo "deb https://deb.best-hosting.cz/debian/ jessie main" > /etc/apt/sources.list.d/best-hosting.list \
-&& apt-get update \
+&& apt-get -q -y update \
 && apt-get install knot knot-dnsutils bh-php70 -y \
 && ln -s /opt/php7/bh-php70/bin/php /usr/local/sbin/ \
 && cd \
