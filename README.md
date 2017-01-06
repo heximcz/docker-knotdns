@@ -7,14 +7,14 @@
 # Knot version is > 2.x
 - current version 2.3.3
 
-#Additional modules:
+# Additional modules:
 
 - php 7
 - vim
 - ntpdate
 - knot-dnsutils (kdig,..)
 
-#docker-compose.yml (example)
+# docker-compose.yml (example)
 
 
 ```
