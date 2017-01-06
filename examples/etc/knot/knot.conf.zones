@@ -1,0 +1,6 @@
+zone:
+  - domain: example.com
+  - domain: example.org
+#  - domain: signed.com
+#    template: signed
+

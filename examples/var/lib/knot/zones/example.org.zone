@@ -1,0 +1,18 @@
+$ORIGIN example.org.
+@                    SOA     ns1.best-hosting.cz. admin.best-hosting.cz. 2017010601 28800 7200 1209600 86400
+@                    TXT     "v=spf1 include:_spf.best-hosting.cz ~all"
+
+$TTL 86400
+@                    A       194.8.253.230
+@                    AAAA    2001:67c:24f4:c405::1:8
+imap                 CNAME   mail.best-hosting.cz.
+mail                 CNAME   mail.best-hosting.cz.
+pop3                 CNAME   mail.best-hosting.cz.
+smtp                 CNAME   mail.best-hosting.cz.
+webmail              CNAME   webmail.best-hosting.cz.
+www                  CNAME   @
+@                    MX   10 mail.best-hosting.cz.
+@                    NS      ns1.best-hosting.cz.
+@                    NS      ns2.best-hosting.cz.
+@                    NS      ns3.best-hosting.cz.
+

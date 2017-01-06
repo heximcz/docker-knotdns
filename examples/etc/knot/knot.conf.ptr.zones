@@ -1,0 +1,4 @@
+zone:
+   - domain: 0.168.192.in-addr.arpa
+     template: ptr
+
