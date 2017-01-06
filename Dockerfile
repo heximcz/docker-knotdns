@@ -9,7 +9,7 @@ ENTRYPOINT /etc/init.d/knot start && bash
 EXPOSE 53/tcp 53/udp
 
 RUN apt-get -q -y update \
-&& apt-get install wget apt-transport-https vim ntpdate php5-cli -y \
+&& apt-get install wget apt-transport-https vim ntpdate php5-cli net-tools -y \
 && wget -O - https://deb.knot-dns.cz/knot/apt.gpg | apt-key add - \
 && echo "deb https://deb.knot-dns.cz/knot/ jessie main" > /etc/apt/sources.list.d/knot.list \
 && apt-get -q -y update \
