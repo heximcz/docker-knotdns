@@ -6,7 +6,7 @@
 - Documentation for Knot DNS 2.x: [html](https://www.knot-dns.cz/docs/2.x/html/),[html single page](https://www.knot-dns.cz/docs/2.x/singlehtml/),[PDF](https://www.knot-dns.cz/docs/2.x/KnotDNS.pdf)
                                                             
 ## Knot version:
-- current version: hexim/knotdns:2.3.3
+- current version: hexim/knotdns:2.4.0
 
 ## Additional modules:
 
