@@ -10,11 +10,13 @@
 
 ## Additional modules:
 
-- php 7
-- vim
-- ntpdate
+- php 7 (php cli)
+- vim (powerful text editor)
+- ntpdate (sync date)
 - knot-dnsutils (kdig,..)
 - net-tools (netstat,...)
+- mc (Midnight Commander)
+- nano (text editor)
 
 ## Example: docker-compose.yml
 
