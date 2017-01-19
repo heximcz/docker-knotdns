@@ -1,4 +1,4 @@
 /knot.iml
 /docker-compose.yml
 /.idea/
-.idea/
+/.build/

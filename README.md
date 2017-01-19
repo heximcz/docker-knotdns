@@ -14,7 +14,7 @@
 - vim
 - ntpdate
 - knot-dnsutils (kdig,..)
-- net-tools (netstat,...) in :latest
+- net-tools (netstat,...)
 
 ## Example: docker-compose.yml
 
