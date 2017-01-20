@@ -10,7 +10,7 @@
 
 ## Additional modules:
 
-- php 7 (php cli)
+- php5-cli (new in latest: php5-mysql php5-curl phpunit)
 - vim (powerful text editor)
 - ntpdate (sync date)
 - net-tools (netstat,...)
