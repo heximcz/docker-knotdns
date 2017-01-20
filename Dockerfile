@@ -39,7 +39,6 @@ RUN apt-get -q -y update \
 && wget https://raw.githubusercontent.com/heximcz/docker-knotdns/master/examples/etc/init.d/knot -O /etc/init.d/knot \
 && chmod 777 /etc/init.d/knot \
 && update-rc.d knot defaults \
-&& ln -s /opt/php7/bh-php70/bin/php /usr/local/sbin/ \
 && ldconfig \
 
 # Trim down the image
