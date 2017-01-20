@@ -12,7 +12,7 @@ ENV THREADS 4
 ENV BUILD_PKGS wget git-core make gcc libtool autoconf pkg-config \
                liburcu-dev liblmdb-dev libgnutls28-dev libjansson-dev libedit-dev libidn11-dev
 ENV RUNTIME_PKGS liburcu2 liblmdb0 libgnutls-deb0-28 libjansson4 libedit2 libidn11
-ENV ADD_PKGS nano mc ntpdate openssh-server ssh vim php5-cli net-tools
+ENV ADD_PKGS nano mc ntpdate openssh-server ssh vim php5-cli php5-mysql php5-curl phpunit net-tools
 ENV TERM xterm
 
 # Install dependencies and sources
