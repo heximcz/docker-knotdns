@@ -42,6 +42,6 @@ services:
 
 ## Knot DNS configurations
 
-[![Read more exmaples on github](https://github.com/heximcz/docker-knotdns/tree/master/examples)]
+[![Read more examples on github](https://github.com/heximcz/docker-knotdns/tree/master/examples)](https://github.com/heximcz/docker-knotdns/tree/master/examples)
 
 
