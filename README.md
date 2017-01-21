@@ -1,4 +1,5 @@
 [![Docker Repository on Quay.io](https://quay.io/repository/heximcz/knotdns/status "Docker Repository on Quay.io")](https://quay.io/repository/heximcz/knotdns)
+[![](https://images.microbadger.com/badges/image/hexim/knotdns.svg)](http://microbadger.com/images/hexim/knotdns "Get your own image badge on microbadger.com")
 
 # heximcz/knotdns:2.4.0
 
