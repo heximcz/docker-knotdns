@@ -1,4 +1,6 @@
-# Docker repository for - Knot DNS
+[![Docker Repository on Quay.io](https://quay.io/repository/heximcz/knotdns/status "Docker Repository on Quay.io")](https://quay.io/repository/heximcz/knotdns)
+
+# heximcz/knotdns:2.4.0
 
 - **High-performance authoritative-only DNS server**
 - Knot DNS is a high-performance authoritative-only DNS server which supports all key features of the modern domain name system.
