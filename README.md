@@ -39,3 +39,9 @@ services:
      - /opt/knot/var/lib:/var/lib/knot
 ```
 
+
+## Knot DNS configurations
+
+[![Read more exmaples on github](https://github.com/heximcz/docker-knotdns/tree/master/examples)]
+
+
