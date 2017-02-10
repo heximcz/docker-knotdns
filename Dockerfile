@@ -19,7 +19,7 @@ ENV TERM xterm
 RUN apt-get -q -y update \
 && apt-get install -q -y ${BUILD_PKGS} ${RUNTIME_PKGS} ${ADD_PKGS} \
 # Compile sources
-&& git clone -b v2.4.0 https://gitlab.labs.nic.cz/labs/knot.git /knot-src \
+&& git clone -b v2.4.1 https://gitlab.labs.nic.cz/labs/knot.git /knot-src \
 && cd /knot-src \
 && autoreconf -if \
 && ./configure --disable-static --enable-fastparser --disable-documentation --prefix=/usr \

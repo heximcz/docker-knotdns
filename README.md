@@ -1,7 +1,7 @@
 [![Docker Repository on Quay.io](https://quay.io/repository/heximcz/knotdns/status "Docker Repository on Quay.io")](https://quay.io/repository/heximcz/knotdns)
 [![](https://images.microbadger.com/badges/image/hexim/knotdns.svg)](http://microbadger.com/images/hexim/knotdns "Get your own image badge on microbadger.com")
 
-# heximcz/knotdns:2.4.0
+# heximcz/knotdns:2.4.1
 
 - **High-performance authoritative-only DNS server**
 - Knot DNS is a high-performance authoritative-only DNS server which supports all key features of the modern domain name system.
@@ -9,11 +9,11 @@
 - Documentation for Knot DNS 2.x: [html](https://www.knot-dns.cz/docs/2.x/html/),[html single page](https://www.knot-dns.cz/docs/2.x/singlehtml/),[PDF](https://www.knot-dns.cz/docs/2.x/KnotDNS.pdf)
                                                             
 ## Docker Knot DNS:
-- latest version: hexim/knotdns:2.4.0
+- latest version: **docker pull hexim/knotdns:2.4.1**
 
 ## Additional modules:
 
-- php5-cli (new in latest: php5-mysql php5-curl phpunit)
+- php5-cli, php5-mysql, php5-curl, phpunit (for [SynKnot](https://synknot.cz/))
 - vim (powerful text editor)
 - ntpdate (sync date)
 - net-tools (netstat,...)
