@@ -19,7 +19,7 @@ ENV TERM xterm
 RUN apt-get -q -y update \
 && apt-get install -q -y ${BUILD_PKGS} ${RUNTIME_PKGS} ${ADD_PKGS} \
 # Compile sources
-&& git clone -b v2.5.3 https://gitlab.labs.nic.cz/knot/knot-dns.git /knot-src \
+&& git clone -b v2.5.4 https://gitlab.labs.nic.cz/knot/knot-dns.git /knot-src \
 && cd /knot-src \
 && autoreconf -if \
 && ./configure --disable-static --enable-fastparser --disable-documentation --prefix=/usr \
