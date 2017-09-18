@@ -8,7 +8,6 @@
 - Knot maintainer: [CZ.NIC Labs](https://www.knot-dns.cz/) Knot DNS is developed by CZ.NIC Labs, the R&D department of .CZ registry and hence is well suited to run anything from the root zone, the top-level domain, to many smaller standard domain names. 
 - Documentation for Knot DNS 2.x: [html](https://www.knot-dns.cz/docs/2.x/html/),[html single page](https://www.knot-dns.cz/docs/2.x/singlehtml/),[PDF](https://www.knot-dns.cz/docs/2.x/KnotDNS.pdf)
 
-
 ## Docker Knot DNS:
 - latest version: **docker pull hexim/knotdns:2.5.4**
 
@@ -22,17 +21,17 @@
 - nano (text editor)
 
 ## Example: docker-compose.yml
-
-
+- Version 3.3 work with Docker Engine release 17.06.0+
+- with docker-compose version [1.16.1+](https://github.com/docker/compose/releases)
 ```
-version: '2'
+version: '3.3'
 services:
-  knot:
-    container_name: knotdns
+  knotdns:
+    container_name: hexim_knot
     image: 'hexim/knotdns:latest'
     ports:
-     - "5053/tcp:53/tcp"
-     - "5053/udp:53/udp"
+     - "5053:53/tcp"
+     - "5053:53/udp"
     stdin_open: true
     volumes:
      - /opt/synknot:/opt/synknot
@@ -40,6 +39,10 @@ services:
      - /opt/knot/var/lib:/var/lib/knot
 ```
 
+## Run bash
+```
+docker-compose exec knotdns bash
+```
 
 ## Knot DNS configurations
 
