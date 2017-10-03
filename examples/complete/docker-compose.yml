@@ -1,0 +1,37 @@
+version: '3.3'
+services:
+  knotdns-pri:
+    container_name: knot-pri
+    image: 'hexim/knotdns:latest'
+    ports:
+     - "5053:53/tcp"
+     - "5053:53/udp"
+    stdin_open: true
+    volumes:
+     - /opt/synknot:/opt/synknot
+     - /opt/knot-pri/etc:/etc/knot
+     - /opt/knot-pri/var/lib:/var/lib/knot
+    networks:
+      test:
+        ipv4_address: 172.1.0.2
+  knotdns-sec:
+    container_name: knot-sec
+    image: 'hexim/knotdns:latest'
+    ports:
+     - "5054:53/tcp"
+     - "5054:53/udp"
+    stdin_open: true
+    volumes:
+     - /opt/synknot:/opt/synknot
+     - /opt/knot-sec/etc:/etc/knot
+     - /opt/knot-sec/var/lib:/var/lib/knot
+    networks:
+      test:
+        ipv4_address: 172.1.0.3
+networks:
+  test:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.1.0.0/24

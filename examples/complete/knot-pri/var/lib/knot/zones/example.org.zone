@@ -1,0 +1,17 @@
+$ORIGIN example.org.
+@                    SOA     ns1.example.com. admin.example.com. 2017010601 28800 7200 1209600 86400
+@                    TXT     "v=spf1 include:_spf.google.com ~all"
+
+$TTL 86400
+@                    A       192.168.20.22
+@                    AAAA    fe80::bd6c:e5b4:696c:5968
+imap                 CNAME   mail.example.com.
+mail                 CNAME   mail.example.com.
+pop3                 CNAME   mail.example.com.
+smtp                 CNAME   mail.example.com.
+webmail              CNAME   webmail.example.com.
+www                  CNAME   @
+@                    MX   10 mail.example.com.
+@                    NS      ns1.example.com.
+@                    NS      ns2.example.com.
+

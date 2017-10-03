@@ -1,0 +1,6 @@
+$TTL 86400
+@ IN SOA ns1.example.com admin.example.com 2016122601 10800 3600 1209600 86400
+@ 86400 IN NS ns1.example.com.
+@ 86400 IN NS ns2.example.com.
+1 86400 IN PTR example.com.
+
