@@ -6,14 +6,14 @@
 - **High-performance authoritative-only DNS server**
 - Knot DNS is a high-performance authoritative-only DNS server which supports all key features of the modern domain name system.
 - Knot maintainer: [CZ.NIC Labs](https://www.knot-dns.cz/) Knot DNS is developed by CZ.NIC Labs, the R&D department of .CZ registry and hence is well suited to run anything from the root zone, the top-level domain, to many smaller standard domain names. 
-- Documentation for Knot DNS 2.x: [html](https://www.knot-dns.cz/docs/2.x/html/),[html single page](https://www.knot-dns.cz/docs/2.x/singlehtml/),[PDF](https://www.knot-dns.cz/docs/2.x/KnotDNS.pdf)
+- [Knot DNS Documentation](https://www.knot-dns.cz/documentation/) 
 
 ## Docker Knot DNS:
 - latest version: **docker pull hexim/knotdns:2.6.0**
 
 ## News
 - from KnotDNS 2.6.0 docker is running on Debian 9 - Stretch
-- new [examples](https://github.com/heximcz/docker-knotdns/tree/master/examples/complete) for primary and secondary DNS server
+- new [examples](https://github.com/heximcz/docker-knotdns/tree/master/examples/complete) for master and slave DNS server
 
 ## Additional modules:
 
