@@ -1,7 +1,7 @@
 [![Docker Repository on Quay.io](https://quay.io/repository/heximcz/knotdns/status "Docker Repository on Quay.io")](https://quay.io/repository/heximcz/knotdns)
 [![](https://images.microbadger.com/badges/image/hexim/knotdns.svg)](http://microbadger.com/images/hexim/knotdns "Get your own image badge on microbadger.com")
 
-# heximcz/knotdns:2.6.1
+# heximcz/knotdns:2.6.2
 
 - **High-performance authoritative-only DNS server**
 - Knot DNS is a high-performance authoritative-only DNS server which supports all key features of the modern domain name system.
@@ -9,7 +9,7 @@
 - [Knot DNS Documentation](https://www.knot-dns.cz/documentation/) 
 
 ## Docker Knot DNS:
-- latest version: **docker pull hexim/knotdns:2.6.1**
+- latest version: **docker pull hexim/knotdns:2.6.2**
 
 ## News
 - from KnotDNS 2.6.0 docker is running on Debian 9 - Stretch
