@@ -20,7 +20,7 @@ ENV TERM xterm
 # Install dependencies and sources
 RUN apt-get -qqy update \
 && apt-get install -qqy ${BUILD_PKGS} ${RUNTIME_PKGS} ${ADD_PKGS} \
-&& git clone -b v2.6.2 https://gitlab.labs.nic.cz/knot/knot-dns.git /knot-src \
+&& git clone -b v2.6.3 https://gitlab.labs.nic.cz/knot/knot-dns.git /knot-src \
 && cd /knot-src \
 && autoreconf -if \
 && ./configure --disable-static --enable-fastparser --disable-documentation --prefix=/usr \
