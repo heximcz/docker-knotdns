@@ -51,5 +51,3 @@ docker-compose exec knotdns bash
 ## Knot DNS configurations
 
 [Read more examples on github](https://github.com/heximcz/docker-knotdns/tree/master/examples)
-
-
