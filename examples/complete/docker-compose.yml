@@ -10,7 +10,7 @@ services:
     stdin_open: true
     volumes:
      - ./knot-pri/etc:/etc/knot
-     - ./knot-pri/var/lib:/var/lib/knot
+     - ./knot-pri/var/lib:/var/lib
     networks:
       test:
         ipv4_address: 172.1.0.2
@@ -24,7 +24,7 @@ services:
     stdin_open: true
     volumes:
      - /opt/knot-sec/etc:/etc/knot
-     - /opt/knot-sec/var/lib:/var/lib/knot
+     - /opt/knot-sec/var/lib:/var/lib
     networks:
       test:
         ipv4_address: 172.1.0.3
