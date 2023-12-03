@@ -12,7 +12,7 @@
 - latest version: **docker pull hexim/knotdns:3.3.2**
 
 ## News
-- from KnotDNS 3.3.2 docker is running on Debian 21 - Bookworm
+- from KnotDNS 3.3.2 docker is running on Debian 12 (Bookworm)
 - [examples](https://github.com/heximcz/docker-knotdns/tree/master/examples/complete) for master and slave DNS server
 
 ## Additional modules:
@@ -35,6 +35,7 @@ services:
     ports:
      - "5053:53/tcp"
      - "5053:53/udp"
+     - "8853:853/udp"
     stdin_open: true
     volumes:
      - /opt/synknot:/opt/synknot
