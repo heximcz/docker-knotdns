@@ -28,7 +28,7 @@ services:
     networks:
       test:
         ipv4_address: 172.1.0.3
-etworks:
+networks:
   test:
     driver: bridge
     ipam:
