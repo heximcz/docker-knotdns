@@ -2,7 +2,7 @@ version: '3.3'
 services:
   knotdns-pri:
     container_name: knot-pri
-    image: 'hexim/knotdns:3.2.2'
+    image: 'hexim/knotdns:3.3.2'
     ports:
      - "5053:53/tcp"
      - "5053:53/udp"
@@ -16,7 +16,7 @@ services:
         ipv4_address: 172.1.0.2
   knotdns-sec:
     container_name: knot-sec
-    image: 'hexim/knotdns:latest'
+    image: 'hexim/knotdns:3.3.2'
     ports:
      - "5054:53/tcp"
      - "5054:53/udp"
