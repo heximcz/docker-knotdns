@@ -2,3 +2,4 @@
 /docker-compose.yml
 /.idea/
 /.build/
+build.log

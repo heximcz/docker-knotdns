@@ -2,15 +2,15 @@ version: '3.3'
 services:
   knotdns-pri:
     container_name: knot-pri
-    image: 'hexim/knotdns:latest'
+    image: 'hexim/knotdns:3.2.2'
     ports:
      - "5053:53/tcp"
      - "5053:53/udp"
+     - "8853:853/udp"
     stdin_open: true
     volumes:
-     - /opt/synknot:/opt/synknot
-     - /opt/knot-pri/etc:/etc/knot
-     - /opt/knot-pri/var/lib:/var/lib/knot
+     - ./knot-pri/etc:/etc/knot
+     - ./knot-pri/var/lib:/var/lib/knot
     networks:
       test:
         ipv4_address: 172.1.0.2
@@ -20,15 +20,15 @@ services:
     ports:
      - "5054:53/tcp"
      - "5054:53/udp"
+     - "8854:853/udp"
     stdin_open: true
     volumes:
-     - /opt/synknot:/opt/synknot
      - /opt/knot-sec/etc:/etc/knot
      - /opt/knot-sec/var/lib:/var/lib/knot
     networks:
       test:
         ipv4_address: 172.1.0.3
-networks:
+etworks:
   test:
     driver: bridge
     ipam:

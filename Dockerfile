@@ -11,8 +11,9 @@ EXPOSE 53/tcp 53/udp 853/tcp
 
 # Environment
 ENV THREADS 4
-ENV BUILD_PKGS wget git-core make gcc libtool autoconf pkg-config liburcu-dev liblmdb-dev libgnutls28-dev libjansson-dev libedit-dev libidn11-dev
+ENV BUILD_PKGS wget git-core make gcc libtool autoconf pkg-config liburcu-dev liblmdb-dev libgnutls28-dev libjansson-dev libedit-dev libidn-dev libnghttp2-dev
 #ENV RUNTIME_PKGS liburcu4 liblmdb0 libgnutls30 libjansson4 libedit2 libidn11
+ENV RUNTIME_PKGS liburcu8 liblmdb0 libgnutls30 libjansson4 libedit2 libidn12 libnghttp2-14
 ENV ADD_PKGS nano mc ntpdate openssh-server ssh vim net-tools
 ENV TERM xterm
 
